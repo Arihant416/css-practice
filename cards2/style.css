@@ -10,9 +10,13 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-family: 'Lato', sans-serif;
-
+	background-color: black;
 	margin: 0;
-	overflow: hidden;
+	overflow: visible;
+}
+.title {
+	color: white;
+	text-transform: uppercase;
 }
 
 .container {
@@ -25,7 +29,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 75vh;
-	color: whitesmoke;
+	color: rgb(245, 245, 245);
 	border-radius: 40px;
 	flex: 0.5;
 	cursor: pointer;
@@ -37,7 +41,7 @@ body {
 .card h3 {
 	font-size: 20px;
 	position: absolute;
-	bottom: 14px;
+	top: 14px;
 	left: 20px;
 	margin: 0;
 	opacity: 0;
@@ -53,10 +57,6 @@ body {
 
 @media (max-width: 700px) {
 	.container {
-		width: 90vw;
-	}
-	.card:nth-of-type(4),
-	.card:nth-of-type(5) {
-		display: none;
+		width: 100vw;
 	}
 }
